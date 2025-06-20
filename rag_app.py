@@ -12,7 +12,8 @@ import openai
 from dotenv import load_dotenv
 
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+openai.api_key = OPENAI_API_KEY
 
 # === Define RAG State Schema ===
 class RAGState(TypedDict):
@@ -23,7 +24,7 @@ class RAGState(TypedDict):
 # === Load and index documents ===
 def load_and_index_documents():
     print("📄 Loading PDF and creating FAISS index...")
-    loader = PyPDFLoader("sample.pdf")
+    loader = PyPDFLoader("omni_browser.pdf")
     docs = loader.load()
 
     splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=100)
