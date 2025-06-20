@@ -12,8 +12,7 @@ venv/
 # FAISS index files
 faiss_index/
 
-# PDFs or other docs (optional, if dynamically generated)
-*.pdf
+
 
 # VSCode settings (optional)
 .vscode/
