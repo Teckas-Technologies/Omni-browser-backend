@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+
+# Environment variables
+.env
+
+# FAISS index files
+faiss_index/
+
+# PDFs or other docs (optional, if dynamically generated)
+*.pdf
+
+# VSCode settings (optional)
+.vscode/
+
+# macOS & Linux
+.DS_Store
+*.swp
+
+# Logs
+*.log
